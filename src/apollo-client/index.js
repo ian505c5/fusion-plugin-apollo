@@ -123,7 +123,7 @@ const ApolloClientPlugin: FusionPlugin<
 
       const client = new ApolloClient({
         ssrMode: __NODE__,
-        connectToDevTools: __BROWSER__ && __DEV__,
+        connectToDevTools: true,
         link: apolloLinkFrom(links),
         cache: cache.restore(initialState),
         resolvers,
